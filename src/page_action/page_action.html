@@ -1,0 +1,58 @@
+<!doctype html>
+<style type="text/css">
+	#mainPopup {
+		padding: 10px;
+		height: 200px;
+		width: 400px;
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 2em;
+        margin-top: 0;
+	}
+
+    #sendclicks {
+        border-radius: 3px;
+        background: #1890ff;
+        color: white;
+        border: none;
+        padding: 7px 10px;
+        cursor: pointer;
+        transition: all .4s;
+    }
+
+    #sendclicks:hover {
+        opacity: 0.7;
+    }
+
+    #links {
+        padding: 10px 0;
+    }
+
+    .link-wrapper {
+        padding: 10px;
+        margin-bottom: 5px;
+        border-radius: 3px;
+        background: #eee;
+        border: 1px solid #ddd;
+    }
+
+    .link-wrapper a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .link-wrapper a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<script src="../../lib/jquery-3.4.1.min.js"></script>
+<script src="popup.js"></script>
+
+<div id="mainPopup">
+<h1>Rise Links</h1>
+    <p>Click the button below to read the links from the currently opened folder.</p>
+    <button id="sendclicks">Read Links</button>
+    <div id="links"></div>
+</div>
