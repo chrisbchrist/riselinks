@@ -11,7 +11,7 @@
         margin-top: 0;
 	}
 
-    #sendclicks {
+    .button {
         border-radius: 3px;
         background: #1890ff;
         color: white;
@@ -45,6 +45,11 @@
     .link-wrapper a:hover {
         text-decoration: underline;
     }
+
+    .no-links {
+        color: red;
+        text-align: center;
+    }
 </style>
 
 <script src="../../lib/jquery-3.4.1.min.js"></script>
@@ -53,6 +58,7 @@
 <div id="mainPopup">
 <h1>Rise Links</h1>
     <p>Click the button below to read the links from the currently opened folder.</p>
-    <button id="sendclicks">Read Links</button>
+<!--    <button id="sendclicks">Read Links</button>-->
+    <button class="button" id="copy-button">Copy Links</button>
     <div id="links"></div>
 </div>
